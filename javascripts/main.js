@@ -22,7 +22,7 @@ function happy(number, counter) {
 };
 
 document.getElementById('submit').onclick = function() {
-	var num = document.getElementById('usr_num').value
+	var num = document.getElementById('usr_num').value;
 
 	document.getElementById('result').innerHTML = happy(num, 0);
 	for (var i = 0; i < 1001; i++) {
