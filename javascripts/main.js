@@ -20,8 +20,9 @@ function happy(number, counter) {
 		return "No happy. Much sad."
 	}
 };
-var num = 998;
 
-console.log(happy(num, 0));
-console.log(happy(999938, 0));
-console.log(happy(3797, 0));
+document.getElementById('submit').onclick = function() {
+	var num = document.getElementById('usr_num').value
+
+	document.getElementById('result').innerHTML = happy(num, 0);
+}
